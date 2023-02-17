@@ -12,8 +12,14 @@ https://docs.docker.com/engine/install/
 
 2.1. Windows 
 
-``` 
+```pwsh 
 Get-Content Dockerfile | docker build - -t demo01:1.0
+
+# hoặc đơn giản hơn 
+
+docker build -t demo01:1.0 .
+
+# trong đó cái dấu . là file Dockerfile ở folder ngữ cảnh dòng lệnh 
 ```
 
 2.2. Linux (chắc MacOS cũng tương tự)
