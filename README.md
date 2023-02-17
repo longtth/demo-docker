@@ -1,0 +1,31 @@
+# Demo Docker 
+
+repo này chưa một đoạn Dockerfile đơn giản cho buổi demo ở FUDN ngày 2023-02-18
+
+src lấy từ bài viết gốc https://viblo.asia/p/docker-for-beginner-ByEZkp3ElQ0
+
+## 1. cài docker theo hướng dẫn ở trang chủ 
+
+https://docs.docker.com/engine/install/
+
+## 2. Build Docker Image  
+
+2.1. Windows 
+
+``` 
+Get-Content Dockerfile | docker build - -t demo01:1.0
+```
+
+2.2. Linux (chắc MacOS cũng tương tự)
+
+```
+docker build - < Dockerfile -t demo01:1.0 
+```
+
+## 3. Run Docker Image 
+
+```
+docker run demo01:1.0
+```
+
+
