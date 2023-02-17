@@ -25,7 +25,12 @@ docker build - < Dockerfile -t demo01:1.0
 ## 3. Run Docker Image 
 
 ```
-docker run demo01:1.0
+docker run -p 3000:3000 demo01:1.0
 ```
 
+## Quản lý container bằng dòng lệnh 
 
+```
+docker ps
+docker exec -it my-container-id-here /bin/sh
+```
